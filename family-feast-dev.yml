@@ -6,3 +6,15 @@ spring:
     host: 139.196.140.140
     timeout: 5000
     port: 6379
+    
+# MQ
+rocketMq:
+  namesrvAddr: http://MQ_INST_1363897142257019_BbHO72M8.mq-internet-access.mq-internet.aliyuncs.com:80
+  consumer:
+    consumerGroup: GID-DEV-GROUP
+    consumerTopic: dev-topic
+    consumerTag: TagA
+  producer:
+    producerGroup: GID-DEV-GROUP
+    producerTopic: dev-topic
+    producerTag: TagA
